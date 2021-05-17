@@ -1,0 +1,7 @@
+@Library("terraform") _
+node 
+{
+  terraformDestroy.call(
+    configFilePath: "config.properties"
+  )
+}
